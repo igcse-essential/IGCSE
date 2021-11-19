@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+button {
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Navigation Bar */
+.main_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+}
+.main_nav p {
+  margin-left: 4%;
+  font-weight: 500;
+}
+.main_nav ul {
+  height: 100%;
+}
+.main_nav ul li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0px 50px;
+  font-weight: 500;
+}
+.main_nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.about {
+  height: 50%;
+  padding: 0px 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #252A34;
+  padding: 30px;
+}
+footer p {
+  color: white;
+  padding: 8px 0px;
+}
+.icons {
+  width: 48px;
+  margin: 6px 12px;
+  padding: 12px;
+  font-size: 24px;
+  transition: 0.3 all ease-in;
+  color: white;
+  background-color: #252A34;
+  border: 1px solid transparent;
+  border-radius: 24px;
+}
+.icons:first-child {width: 50px;}
+.icons:first-child:hover {
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+.icons:nth-child(2):hover {
+  color: green;
+  border: 1px solid green;
+}
+.icons:nth-child(3):hover {
+  color: #3376b0;
+  border: 1px solid #3376b0;
+}
+.icons:last-child:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid rgb(115,68,178);
+}
+@media only screen and (max-width: 620px) {
+  .main_nav ul li {
+    padding: 0px 20px;
+  }
+  .about {
+    padding: 0px 20px;
+  }
+}
