@@ -28,7 +28,7 @@
        text-align: center;
        padding: 20px 0px;
      }
-     .section article p {
+     .section article p:not(.date) {
        padding: 20px 0px;
      }
      .section article a {
@@ -49,53 +49,10 @@
        width: 100%;
      }
      .date {
-       font-size: 36px;
+       padding: 10px 0px;
+       font-size: 28px;
        font-family: cookie;
      }
-    /*
-      .section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 63vh;
-      }
-      .intro {
-        background-color:#EADEDE;
-      }
-      .rev {
-        background-color: #FF8243;
-      }
-      .left {
-        width: 50%;
-        padding: 2%;
-        text-align: center;
-      }
-      .left p {
-        font-weight: 500;
-        padding: 10px 0px 30px 0px;
-      }
-      .left h2 {
-        font-weight: 700;
-        padding: 10px 0px;
-        font-size: 40px;
-      }
-      .go_blog {
-        padding: 8px 16px;
-        border-radius: 24px;
-        background-color: #04AA6D;
-        color: white;
-        font-weight: 500;
-        cursor: pointer;
-      }
-      .right {
-        width: 50%;
-      }
-      .right img {
-        display: block;
-        width: 90%;
-        margin: auto;
-      }
-      */
     </style>
   </head>
   <body>
@@ -110,69 +67,48 @@
       </nav>
     </header>
     <main>
-      <!--<div class="section intro">
-        <div class="left">
-          <h2>INTRODUCTION</h2><p> Resources, Curriculum, Studying, Note Writing </p>
-          <button class="go_blog" onclick="window.location.href='introduction.html'">Introduction</button>
-        </div>
-        <div class="right"><img src="images/physics.jpeg"></div>
-      </div>
-      <div class="section rev">
-        <div class="left">
-          <h2>REVISION & EXAM TIPS</h2><p> Important tips when revising for your subjects and exams </p>
-          <button class="go_blog" onclick="window.location.href='revision_tips.html'">Revision Tips</button>
-        </div>
-        <div class="right"><img src="images/chemistry.jpeg"></div>
-      </div>
-      <div class="section exam">
-        <div class="left">
-          <h2>EXAM TIPS</h2><p> Clever tips to know before you take your exams </p>
-          <button class="go_blog" onclick="window.location.href='exam_tips.html'">Exam Tips</button>
-        </div>
-        <div class="right"><img src="images/amaths.jpeg"></div>
-      </div>-->
       <div class="section">
         <div class="left">
           <article>
             <div class="img_frame"><a href="1_left.html"><img src="../images/study.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 08-22-2020 </p>
             <h3>Nail Your IGCSEs</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Welcome to this website. Through this website, you would be able to find concise and detailed notes which may help you in your revision....</em></p>
             <a href="1_left.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="2_left.html"><img src="../images/notes.jpg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 09-02-2020 </p>
             <h3>Writing Good Notes</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Up until now, no one has ever figured what is the single best way to write notes. Some prefer to jam in as much information as possible...</em></p>
             <a href="2_left.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="3_left.html"><img src="../images/resources.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 09-19-2020 </p>
             <h3>Essential Resources</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Now, a large portion of students struggles at the very end of the marathon. That is, they do not know which resources they should use in...</em></p>
             <a href="3_left.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="4_left.html"><img src="../images/study2.png"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 12-11-2020 </p>
             <h3>Efficient Studying</h3>
-            <p><em>Short Description</em></p>
+            <p><em>For the past 2 years, I have seen different types of methods in which students try to approach the IGCSE course. Some dedicate specific...</em></p>
             <a href="4_left.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="5_left.html"><img src="../images/what_next.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 06-07-2021 </p>
             <h3>What's Next</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Say you have already taken your IGCSE. You got the grades that reflects the amount of effort you have placed and you are very much happy....</em></p>
             <a href="5_left.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="6_left.html"><img src="../images/ib_alevel2.png"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 06-16-2021 </p>
             <h3>IBDP OR A-Level</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Before I start writing about the two, I want to clear up a misconception real quick. A lot of students are surprised that if they apply...</em></p>
             <a href="6_left.html"> Read More </a>
           </article>
         </div>
@@ -180,51 +116,51 @@
         <div class="right">
           <article>
             <div class="img_frame"><a href="1_right.html"><img src="../images/tips.png"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 08-27-2020 </p>
             <h3>Crucial Tips</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Now, a lot of you may be wondering, what is the most efficient way to revise your IGCSE subjects. Well, guess what, I am going to give...</em></p>
             <a href="1_right.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="2_right.html"><img src="../images/maths_mistake.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 09-27-2020 </p>
             <h3>Maths Exams Mistakes</h3>
-            <p><em>Short Description</em></p>
+            <p><em>I have always hated taking Math Exams the most, regardless if it is the extended one or additional. I am a careless exam taker. That...</em></p>
             <a href="2_right.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="3_right.html"><img src="../images/mark_scheme.png"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 10-31-2020 </p>
             <h3>Ban Mark Schemes?</h3>
-            <p><em>Short Description</em></p>
+            <p><em>A lot of teachers discourage students from getting hold of mark schemes and examiner reports but I disagree. I think the main reason...</em></p>
             <a href="3_right.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="4_right.html"><img src="../images/chemistry2.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 10-21-2020 </p>
             <h3>Grasping Chemistry's MS</h3>
-            <p><em>Short Description</em></p>
+            <p><em>A lot of students do not understand the significance of understanding the mark scheme. They assume that as long as they get their...</em></p>
             <a href="4_right.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="5_right.html"><img src="../images/chemistry3.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 04-27-2021 </p>
             <h3>Misconceptions In Chemistry</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Welcome back! This post will be the start of a new series. I have written quite a lot of info regarding exams and revision so today, we...</em></p>
             <a href="5_right.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="6_right.html"><img src="../images/physics3.jpeg"  alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 11-11-2021 </p>
             <h3>Learning From Physics' MS</h3>
-            <p><em>Short Description</em></p>
+            <p><em>When revising, it is important to understand that there is absolutely no point in doing 2 decades worth of past papers without checking...</em></p>
             <a href="6_right.html"> Read More </a>
           </article>
           <article>
             <div class="img_frame"><a href="7_right.html"><img src="../images/physics2.jpeg" href="7_right.html" alt="failed picture"></a></div>
-            <p class="date"> Date </p>
+            <p class="date"> 05-24-2021 </p>
             <h3>Misconceptions In Physics</h3>
-            <p><em>Short Description</em></p>
+            <p><em>Hi Guys! This will be a series of the common misconceptions students have in physics. Let's start with...</em></p>
             <a href="7_right.html"> Read More </a>
           </article>
         </div>
