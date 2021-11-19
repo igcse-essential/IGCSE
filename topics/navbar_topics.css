@@ -1,0 +1,35 @@
+.topics_nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 7vh;
+  background-color: #222831;
+  box-shadow: 0px 3px 10px rgb(80,80,80);
+}
+.topics_nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  margin-left: 24px;
+  list-style: none;
+}
+.topics_nav ul li a {
+  display: inline;
+  padding: 0px 24px;
+  text-decoration: none;
+  trasition: 0.3 ease;
+}
+.topics_nav ul li a:not(.active_topic) {color: white;}
+.topics_nav .physics:hover {color:#95E1D3;}
+.topics_nav .chemistry:hover {color: #FCE38A;}
+.topics_nav .amaths:hover {color: #F38181;}
+
+main {padding: 50px 75px;}
+main ul {font-size: 18px; padding: 20px 40px;}
+main ul li {padding: 5px 0px;}
+main ul li a {color: #113CFC}
