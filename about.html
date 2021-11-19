@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="home.css">
     <script src="https://kit.fontawesome.com/31f55211f1.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="book_favicon.png">
+    <link rel="icon" href="logo3.png">
     <meta charset="utf-8">
     <title>IGCSE Essential</title>
     <style>
@@ -11,85 +11,97 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:rgb(240,240,240);
-        width: 100%;
-        margin: auto;
+        background-color:#1597E5;
+        height: 63vh;
       }
-      .right {
-        width: 35vw;
-        padding: 2%;
+      .phy {
+        background-color:#95E1D3
       }
-      .right h2 {
-        font-weight: 700;
-        padding: 5px 0px;
-        font-size: 30px;
+      .che {
+        background-color: #FCE38A
       }
-      .right p {
-        padding: 10px 0px;
-        text-align: justify;
+      .adm {
+        background-color: #F38181;
       }
       .left {
-        width: 65vw;
-        overflow: hidden;
+        width: 50%;
+        padding: 2%;
+        text-align: center;
       }
-      .left img {
+      .left p {
+        font-weight: 500;
+        padding: 10px 0px 30px 0px;
+      }
+      .left h2 {
+        font-weight: 700;
+        padding: 10px 0px;
+        font-size: 60px;
+      }
+      .go_topics {
+        padding: 8px 16px;
+        border-radius: 24px;
+        background-color: #04AA6D;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .right {
+        width: 50%;
+      }
+      .right img {
         display: block;
-        max-width: 100%;
-      }
-      .social_icons_footer {
-        margin-left: -10px;
-      }
-      .icons {
+        width: 90%;
+        border-radius: 1.5em;
         margin: auto;
-        background-color: transparent;
-        color: inherit;
-      }
-      .icons:hover {
-        background-color: transparent;
       }
     </style>
   </head>
   <body>
     <header>
       <nav class="main_nav">
-        <p> IGCSE Essential </p>
+        <div class="left_nav">
+          <img src="logo3.png" alt="failed">
+          <span> IGCSE Essential </span>
+        </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog/blog.html">Blog</a></li>
-          <button class="about" onclick="window.location.href='about.html'">About</button>
+          <li class="active"><a>Home</a></li>
+          <li onclick="window.location.href='blog/blog.html'"><a>Blog</a></li>
+          <li onclick="window.location.href='about.html'"><a>About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="section">
+      <div class="section phy">
         <div class="left">
-          <img src="images/about_me.png" alt="failed">
+          <h2> PHYSICS </h2><p> Get to know the properties of matter and energy </p>
+          <button class="go_topics" onclick="window.location.href='topics/physics.html'">Learn Physics</button>
         </div>
-        <div class="right">
-          <h2>Girvin Djapardi</h2>
-          <p><strong>IBDP Student</strong></p>
-          <p>Hi! My name is Girvin. I am currently sitting in JC 2 and am taking the IB Diploma Programme.
-           On this website, you will be able to discover numerous tips for exams,
-           revision notes and advice on time management.
-           <br><br>Yes, I do love Math and Science which is why I have created this website for
-           those of you who would like to nail your IGCSEs just like I did! If you have any
-           questions, be sure to leave an email or message me on Instagram!</p>
-           <p> Education <br> SIS Groups of Schools </p>
-           <div class="social_icons_footer">
-             <span class="contact_icon">
-               <i class="fas fa-envelope icons" onclick="window.open('mailto:igcse.essential@gmail.com')"></i>
-               <i class="fab fa-whatsapp icons" onclick="window.open('https://wa.me/628116337728')"></i>
-               <i class="fab fa-linkedin-in icons" onclick="window.open('http://www.linkedin.com/')"></i>
-               <i class="fab fa-instagram icons" onclick="window.open('http://www.instagram.com/')"></i>
-             </span>
-           </div>
-         </div>
+        <div class="right"><img src="images/physics.jpeg"></div>
       </div>
-      <!--<div class="contact">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdw8yPTYPFQNg3k6y1k_S6S3poHh-pTzQ3NlfIrWSE0YtZ-cQ/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>-->
+      <div class="section che">
+        <div class="left">
+          <h2> CHEMISTRY </h2><p> Get to know the properties and behaviours of matter </p>
+          <button class="go_topics" onclick="window.location.href='topics/chemistry.html'">Learn Chemistry</button>
+        </div>
+        <div class="right"><img src="images/chemistry.jpeg"></div>
+      </div>
+      <div class="section adm">
+        <div class="left">
+          <h2 style="font-size:40px;">ADDITIONAL MATHS</h2><p> Get to know numbers, functions, calculus and more </p>
+          <button class="go_topics" onclick="window.location.href='topics/amaths.html'">Learn Amaths</button>
+        </div>
+        <div class="right"><img src="images/amaths.jpeg"></div>
+      </div>
     </main>
     <footer>
+      <div class="social_icons_footer">
+        <span class="contact_icon">
+          <i class="fas fa-envelope icons" onclick="window.open('mailto:igcse.essential@gmail.com')"></i>
+          <i class="fab fa-whatsapp icons" onclick="window.open('https://wa.me/628116337728')"></i>
+          <i class="fab fa-linkedin-in icons" onclick="window.open('http://www.linkedin.com/')"></i>
+          <i class="fab fa-instagram icons" onclick="window.open('http://www.instagram.com/')"></i>
+        </span>
+      </div>
       <p>@2021 by Girvin Djapardi - IGCSE Essential</p>
     </footer>
   </body>
