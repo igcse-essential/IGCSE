@@ -11,48 +11,41 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:#1597E5;
-        height: 63vh;
-      }
-      .phy {
-        background-color:#95E1D3
-      }
-      .che {
-        background-color: #FCE38A
-      }
-      .adm {
-        background-color: #F38181;
-      }
-      .left {
-        width: 50%;
-        padding: 2%;
-        text-align: center;
-      }
-      .left p {
-        font-weight: 500;
-        padding: 10px 0px 30px 0px;
-      }
-      .left h2 {
-        font-weight: 700;
-        padding: 10px 0px;
-        font-size: 60px;
-      }
-      .go_topics {
-        padding: 8px 16px;
-        border-radius: 24px;
-        background-color: #04AA6D;
-        color: white;
-        font-weight: 500;
-        cursor: pointer;
+        background-color:rgb(240,240,240);
+        width: 100%;
+        margin: auto;
       }
       .right {
-        width: 50%;
+        width: 35vw;
+        padding: 2%;
       }
-      .right img {
+      .right h2 {
+        font-weight: 700;
+        padding: 5px 0px;
+        font-size: 30px;
+      }
+      .right p {
+        padding: 10px 0px;
+        text-align: justify;
+      }
+      .left {
+        width: 65vw;
+        overflow: hidden;
+      }
+      .left img {
         display: block;
-        width: 90%;
-        border-radius: 1.5em;
+        max-width: 100%;
+      }
+      .social_icons_footer {
+        margin-left: -10px;
+      }
+      .icons {
         margin: auto;
+        background-color: transparent;
+        color: inherit;
+      }
+      .icons:hover {
+        background-color: transparent;
       }
     </style>
   </head>
@@ -64,44 +57,38 @@
           <span> IGCSE Essential </span>
         </div>
         <ul>
-          <li class="active"><a>Home</a></li>
+          <li onclick="window.location.href='index.html'"><a>Home</a></li>
           <li onclick="window.location.href='blog/blog.html'"><a>Blog</a></li>
-          <li onclick="window.location.href='about.html'"><a>About</a></li>
+          <li class="active"><a>About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="section phy">
+      <div class="section">
         <div class="left">
-          <h2> PHYSICS </h2><p> Get to know the properties of matter and energy </p>
-          <button class="go_topics" onclick="window.location.href='topics/physics.html'">Learn Physics</button>
+          <img src="images/about_me.png" alt="failed">
         </div>
-        <div class="right"><img src="images/physics.jpeg"></div>
+        <div class="right">
+          <h2>Girvin Djapardi</h2>
+          <p><strong>IBDP Student</strong></p>
+          <p>Hi! My name is Girvin. I am currently sitting in JC 2 and am taking the IB Diploma Programme.
+           On this website, you will be able to discover numerous tips for exams,
+           revision notes and advice on time management.
+           <br><br>Yes, I do love Math and Science which is why I have created this website for
+           those of you who would like to nail your IGCSEs just like I did! If you have any
+           questions, be sure to leave an email or message me on Instagram!</p>
+           <p> Education <br> SIS Groups of Schools </p>
+           <div class="social_icons_footer">
+             <span class="contact_icon">
+               <i class="fas fa-envelope icons" onclick="window.open('mailto:igcse.essential@gmail.com')"></i>
+               <i class="fab fa-whatsapp icons" onclick="window.open('https://wa.me/628116337728')"></i>
+               <i class="fab fa-linkedin-in icons" onclick="window.open('http://www.linkedin.com/')"></i>
+               <i class="fab fa-instagram icons" onclick="window.open('http://www.instagram.com/')"></i>
+             </span>
+           </div>
+         </div>
       </div>
-      <div class="section che">
-        <div class="left">
-          <h2> CHEMISTRY </h2><p> Get to know the properties and behaviours of matter </p>
-          <button class="go_topics" onclick="window.location.href='topics/chemistry.html'">Learn Chemistry</button>
-        </div>
-        <div class="right"><img src="images/chemistry.jpeg"></div>
-      </div>
-      <div class="section adm">
-        <div class="left">
-          <h2 style="font-size:40px;">ADDITIONAL MATHS</h2><p> Get to know numbers, functions, calculus and more </p>
-          <button class="go_topics" onclick="window.location.href='topics/amaths.html'">Learn Amaths</button>
-        </div>
-        <div class="right"><img src="images/amaths.jpeg"></div>
-      </div>
-    </main>
     <footer>
-      <div class="social_icons_footer">
-        <span class="contact_icon">
-          <i class="fas fa-envelope icons" onclick="window.open('mailto:igcse.essential@gmail.com')"></i>
-          <i class="fab fa-whatsapp icons" onclick="window.open('https://wa.me/628116337728')"></i>
-          <i class="fab fa-linkedin-in icons" onclick="window.open('http://www.linkedin.com/')"></i>
-          <i class="fab fa-instagram icons" onclick="window.open('http://www.instagram.com/')"></i>
-        </span>
-      </div>
       <p>@2021 by Girvin Djapardi - IGCSE Essential</p>
     </footer>
   </body>
